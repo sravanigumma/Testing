@@ -1,21 +1,15 @@
-'use strict';
+const AWS = require('aws-lambda');
 
-module.exports.helloworld = async (event,context,callback) => {
-  const response = {
+exports.handler = async (event) => {
+  return {
     statusCode: 200,
     body: JSON.stringify(
       {
-        message: printHelloWorld(),
+        message: 'Test lambda function executed successfully!',
         input: event,
       },
       null,
       2
-    ),
-    isBase64Encoded: False
-  };
-callback(null,response)
+     ),
+    };
 };
-function printHelloWorld(){
-  return "Hello World";
-}
-module.exports.printHelloWorld=printHelloWorld;
