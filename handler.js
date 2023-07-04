@@ -11,6 +11,7 @@ module.exports.helloworld = async (event,context,callback) => {
       null,
       2
     ),
+    isBase64Encoded: False
   };
 callback(null,response)
 };
