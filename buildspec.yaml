@@ -18,6 +18,7 @@ phases:
       - npm install
       - echo Running tests
       - npm install -g aws-lambda
+      - npm install -g jest
       - npm run test
   post_build:
     commands:
