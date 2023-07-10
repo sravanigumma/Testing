@@ -8,6 +8,7 @@ phases:
       commands:
        - echo installing serverless framework
        - npm install -g serverless
+       - npm install -g aws-lambda
   pre_build:
     commands:
       - echo install pre build commands
