@@ -60,7 +60,7 @@ provider:
 
 functions:
   getMsg:
-    handler: handler.api
+    handler: handler.hello
     events:
       - http: GET /
 #    events:
